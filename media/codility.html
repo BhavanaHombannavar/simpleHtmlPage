@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head><title>Codility test</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></head><body>
+    <table>
+        <tbody>
+        <tr>
+            <td style="color: #ff00ff; background-color:#FFFFFF">Q</TD>
+            <td style="background-color: #442244; color: #442244">Y</td>
+            <td style="color: #FFFF00; background-color:#442244">A</td>
+        </tr>
+        <tr>
+            <td style="color: #FFEEFE; background-color:#990000">Q</td>
+            <td style="color: #FFFF00; background-color:#FF0">M</td>
+            <td style="color: #000000; background-color:#FF7777">O</td>
+        </tr>
+        </tbody>
+    </table>
+    <script>
+       $(document).ready(function(){
+        /*
+        // test1
+        let res='';
+        $('td').map(function() { 
+            if($(this).css('color') != $(this).css('background-color')){
+                var cellText = $(this).html();   
+                console.log(cellText);
+                res = res+cellText;
+            }
+        });
+        console.log(res);*/
+        // test2
+        phone_numbers = ['234-567-890', '444-444-444', '321-543-234'];
+         phone_owners = ['Harry', 'Nick', 'Michael'];
+         number = '444-444-441';
+        let res = phone_numbers.find(ph => {
+                return ph == number
+            });
+            if(res){
+                console.log(phone_owners[phone_numbers.indexOf(res)])
+            }else{
+                console.log(number)
+            }
+            });
+    </script>
+</body></html>
